@@ -64,3 +64,31 @@ playerOne = getPlayerUserName('Luke') // == > 'Luke'
 playerTwo = getPlayerUserName('Laura') // == > 'Laura'
 playerThree = getPlayerUserName('Kate') // == > 'Kate'
 playerFour = getPlayerUserName('Kevin') // == > 'Kevin'
+
+// FUNCTIONS LAB!!
+
+// 1. 
+function maxOfTwoNumbers(x, y) {
+    if (x >= y) {
+        return x;
+} else {
+    return y;
+}
+  
+// or more "elegantly" using the fantasic ternary expression!
+// return x >= y ? x : y;
+};
+ console.log(maxOfTwoNumbers(3, 9));
+
+ // 2.
+const maxOfThreeNumbers = function(x, y, z){
+    if (x >= y && x >= z){
+        return x;
+    } else if (y >= x && y >= z){
+        return y;
+    } else {
+        return z;
+    }
+};
+
+console.log(maxOfThreeNumbers(5, 10, 21));
